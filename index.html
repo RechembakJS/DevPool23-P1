@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="imagem/png" href="resources/img/rick.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick & Morty - Lista de personagens</title>
+    <link rel="stylesheet" type="text/css" href="css/character-list.css">
+</head>
+
+<body>
+    <header>
+        <section id="logo">
+            <div id="logo-container">
+                <img id="logo-image" src="resources/img/logo.png">
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="filter-control">
+            <input id="name-searche" type="text" placeholder="Filtre pelo nome de um personagem aqui">
+            <select id="character-status">
+                <option id="option-filter" value="">Todos</option>
+                <option id="option-filter" value="alive">Vivo</option>
+                <option id="option-filter" value="dead">Morto</option>
+                <option id="option-filter" value="unknown">Desconhecido</option>
+            </select>
+            <button id="apl-filter">Filtrar</button>
+        </section>
+
+        <section id="character-list">
+            <!--Dinâmico-->
+        </section>
+    </main>
+    <footer>
+        <section id="paginate-buttons">
+            <section id="buttons-page">
+                <button class="fisrt-page" id="fisrt-page" id="fisrt-page">&#10218;</button>
+                <button class="previus-page" id="previus-page">&#10216;</button>
+                <button class="page-numbers" id="page-numbers">1</button>
+                <button class="next-pag" id="next-pag" id="next-pag">&#10217;</button>
+                <button class="last-page" id="last-page">&#10219;</button>
+            </section>
+        </section>
+        <script type="text/javascript" src="js/get-api.js"></script>
+        <script type="text/javascript" src="js/create-list.js"></script>
+        <script type="text/javascript" src="js/filter.js"></script>
+        <script type="text/javascript" src="js/select-character.js"></script>
+        <script type="text/javascript" src="js/paginate.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </footer>
+</body>
+
+</html>
